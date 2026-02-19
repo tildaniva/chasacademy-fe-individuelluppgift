@@ -6,13 +6,13 @@
 
 *:focus{
     outline: 2px solid #005fcc;
-    outline-offset: 2px;
+    outline-offset: 0.5px;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #777777;
+    color: #1f1f1f;
 }
 
 .top-bar {
@@ -24,18 +24,19 @@ body {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.top-bar ul, a {
+.top-bar li, a {
     text-decoration: none;
-    color: #333333;
+    color: #1f1f1f;
     font-size: 14px;
     display: inline;
     padding: 10px;
+    list-style-type: none;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #333333;
+    color: #1f1f1f;
 }
 
 .menu {
@@ -45,7 +46,7 @@ body {
 
 .menu-item a {
     text-decoration: none;
-    color: #333333;
+    color: #1f1f1f;
     font-size: 14px;
 }
 
@@ -66,7 +67,7 @@ body {
     position: absolute;
     top: 50%;
     left: 10%;
-    color: #555555;
+    color: #1f1f1f;
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.6);
     padding: 16px 24px;
@@ -76,11 +77,12 @@ body {
 .primary-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #cccccc;
+    background-color: #555555;
     color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .content {
@@ -90,7 +92,7 @@ body {
 .section-title h2 {
     font-size: 24px;
     margin-bottom: 16px;
-    color: #666666;
+    color: #1f1f1f;
 }
 
 .products {
@@ -114,10 +116,10 @@ body {
     margin-bottom: 8px;
 }
 
-.product-card h1 {
+.product-card h3 {
     font-size: 18px;
     margin-bottom: 4px;
-    color: #555555;
+    color: #1f1f1f;
 }
 
 .product-description {
@@ -136,10 +138,11 @@ body {
     display: inline-block;
     padding: 8px 16px;
     background-color: #dddddd;
-    color: #777777;
+    color: #1f1f1f;
     border-radius: 4px;
     cursor: pointer;
     font-size: 13px;
+    border-color: #dddddd;
 }
 
 .newsletter {

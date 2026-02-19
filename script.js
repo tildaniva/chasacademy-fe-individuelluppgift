@@ -13,4 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Thank you for subscribing!");
         });
     }
+    axe.run().then(results => {
+    console.log('axe results:', results.violations);
+});
+
 });
