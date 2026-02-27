@@ -16,5 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     axe.run().then(results => {
     console.log('axe results:', results.violations);
 });
+  new PerformanceObserver((entryList) => {
+       for (const entry of entryList.getEntries()) {
+           console.log('LCP:', entry.startTime, 'ms', entry.element);
+       }
+   }).observe({ type: 'largest-contentful-paint', buffered: true });
 
 });
